@@ -103,7 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-src/config/*
 
 # mainly for package-lock.json and pnpm-lock.yml 
 *-lock.* 
