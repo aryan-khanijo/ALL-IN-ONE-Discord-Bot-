@@ -22,14 +22,14 @@ module.exports = async (client, interaction, args) => {
                 if (data) {
                     data.Category = cat.id;
                     data.Channel = ch.id
-                    data.ChannelName = "{emoji} {channel name}"
+                    data.ChannelName = "{emoji} {member}'s VC"
                     data.save();
                 }
                 else {
                     new voiceSchema({
                         Guild: interaction.guild.id,
                         Channel: ch.id,
-                        ChannelName: "{emoji} {channel name}",
+                        ChannelName: "{emoji} {member}'s VC",
                         Category: cat.id
                     }).save();
                 }
